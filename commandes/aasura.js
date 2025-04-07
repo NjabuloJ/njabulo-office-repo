@@ -14,6 +14,13 @@ zokou({
   if (!reference) {
     return repondre("Please specify the surah number or name.", {
       contextInfo: {
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
         externalAdReply: {
           title: "Surah Reference Required",
           body: "Please specify the surah number or name.",
@@ -32,6 +39,13 @@ zokou({
     if (response.data.status !== 200) {
       return repondre("Invalid surah reference. Please specify a valid surah number or name.", {
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
             title: "Invalid Surah Reference",
             body: "Please specify a valid surah number or name.",
@@ -46,7 +60,7 @@ zokou({
     
     const data = response.data.data;
     const messageText = `
-ᬑ *LUCKY QURAN SURAH* ᬒ
+ᬑ *NJABULO JB QURAN SURAH* ᬒ
 
 *🕌 Quran: The Holy Book*
 📜 *Surah:* 🕌❤️${data.number}: ${data.asma.ar.long} (${data.asma.en.long})❤️🕌
@@ -54,15 +68,21 @@ zokou({
 🏮 *Number of verses:* ${data.ayahCount}
 🔮 *Explanation (Urdu):* ${data.tafsir.id}
 🔮 *Explanation (English):* ${data.tafsir.en}
-╭────────────────◆
-│ *_Powered by ${conf.OWNER_NAME}*
-╰─────────────────◆ `;
+
+*_Powered by ${conf.OWNER_NAME}* `;
     
     await zk.sendMessage(dest, {
       text: messageText,
       contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
         externalAdReply: {
-          title: "LUCKY QURAN SURAH",
+          title: "NJABULO JB QURAN SURAH",
           body: `We're reading: ${data.asma.en.long}`,
           mediaType: 1,
           thumbnailUrl: conf.URL, 
@@ -76,6 +96,13 @@ zokou({
     console.error("Error fetching Quran passage:", error);
     await repondre("API request failed. Please try again later.", {
       contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
         externalAdReply: {
           title: "Error Fetching Quran Passage",
           body: "Please try again later.",
