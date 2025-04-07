@@ -68,9 +68,16 @@ zokou({
                 url: "https://files.catbox.moe/bewdug.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
-            ptt: false, // Set to true if you want it as a voice note
+            ptt: true, // Set to true if you want it as a voice note
             caption: "NJABULO-JB SONG",
             contextInfo: {
+             isForwarded: true,
+             forwardedNewsletterMessageInfo: {
+             newsletterJid: "120363288304618280@newsletter",
+              newsletterName: "NJABULO JB",
+               serverMessageId: -1,
+                },
+                forwardingScore: 999,
                 externalAdReply: {
                     body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
                     thumbnailUrl: "https://files.catbox.moe/votefa.jpg",
