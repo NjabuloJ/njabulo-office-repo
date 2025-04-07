@@ -7,14 +7,6 @@ const conf = require(__dirname + "/../set");
 
 const readMore = String.fromCharCode(8206).repeat(4001);
 
-const formatUptime = (seconds) => {
-    seconds = Number(seconds);
-    const days = Math.floor(seconds / 86400);
-    const hours = Math.floor((seconds % 86400) / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const remainingSeconds = Math.floor(seconds % 60);
-
-    moment.tz.setDefault("Africa/Dar Es Salam")
         // Generate greeting based on time of day
     const hour = moment().hour();
     let greeting = "🌅Good Morning my brother 🌄";
@@ -25,6 +17,14 @@ const formatUptime = (seconds) => {
     } else if (hour >= 22 || hour < 5) {
         greeting = "Good Night 🌌";
 };
+
+
+const formatUptime = (seconds) => {
+    seconds = Number(seconds);
+    const days = Math.floor(seconds / 86400);
+    const hours = Math.floor((seconds % 86400) / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const remainingSeconds = Math.floor(seconds % 60);
 
     return [
         days > 0 ? `${days} ${days === 1 ? "day" : "days"}` : '',
