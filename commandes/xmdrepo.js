@@ -4,7 +4,7 @@ const axios = require("axios");
 const moment = require("moment");
 
 zokou({ 
-    nomCom: "rep1", 
+    nomCom: "repo", 
     categorie: "General", 
     reaction: "🦋", 
     nomFichier: __filename 
