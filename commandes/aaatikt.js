@@ -26,21 +26,21 @@ zokou({
     }
 
     // Construct TikTok search message
-    let searchMessage = `LUCKY MD PLANET TIKTOK SEARCH\n\n`;
+    let searchMessage = `NJABULO JB PLANET TIKTOK SEARCH\n\n`;
 
     // Loop through search results and construct track info with numbers
     searchData.forEach((track, index) => {
       const trackNumber = index + 1; // Number tracks starting from 1
-      searchMessage += `*☞${trackNumber}.* ${track.title}\n`;
-      searchMessage += `*☞Region*: ${track.region || "Unknown"}\n`;
-      searchMessage += `*☞ID*: ${track.id}\n`;  // `id` is the video ID
-      searchMessage += `*☞Video URL*: ${track.url}\n`;
-      searchMessage += `*☞Cover Image*: ${track.cover}\n`;
-      searchMessage += `*☞Views*: ${track.views || 0}\n`;
-      searchMessage += `*☞Likes*: ${track.likes || 0}\n`;
-      searchMessage += `*☞Comments*: ${track.comments || 0}\n`;
-      searchMessage += `*☞Shares*: ${track.share || 0}\n`;
-      searchMessage += `*☞Download Count*: ${track.download || 0}\n`;
+      searchMessage += `*🦋${trackNumber}.* ${track.title}\n`;
+      searchMessage += `*🦋Region*: ${track.region || "Unknown"}\n`;
+      searchMessage += `*🦋ID*: ${track.id}\n`;  // `id` is the video ID
+      searchMessage += `*🦋Video URL*: ${track.url}\n`;
+      searchMessage += `*🦋Cover Image*: ${track.cover}\n`;
+      searchMessage += `*🦋Views*: ${track.views || 0}\n`;
+      searchMessage += `*🦋Likes*: ${track.likes || 0}\n`;
+      searchMessage += `*🦋Comments*: ${track.comments || 0}\n`;
+      searchMessage += `*🦋Shares*: ${track.share || 0}\n`;
+      searchMessage += `*🦋Download Count*: ${track.download || 0}\n`;
       searchMessage += `────────────────\n\n`;
     });
 
@@ -50,11 +50,17 @@ zokou({
       {
         text: searchMessage,
         contextInfo: {
-          mentionedJid: [dest],
+         isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
             showAdAttribution: true,
-            title: "LUCKY MD TIKTOK SEARCH",
-            body: "Pambe kwa Frediezra",
+            title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+            body: "message on",
             sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
             mediaType: 1,
             renderLargerThumbnail: false,
