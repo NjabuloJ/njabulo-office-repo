@@ -13,6 +13,16 @@ zokou({
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
     const img = 'https://files.catbox.moe/xfn913.jpg';
 
+    // Generate greeting based on time of day
+    const hour = moment().hour();
+    let greeting = "🌅Good Morning my brother 🌄";
+    if (hour >= 12 && hour < 18) {
+        greeting = "🌄Good afternnon! Stay energized! 🌿";
+    } else if (hour >= 18) {
+        greeting = "🌇Good Everning! Hope you had a great day! 🌙";
+    } else if (hour >= 22 || hour < 5) {
+        greeting = "Good Night 🌌";
+
     try {
         const response = await axios.get(githubRepo);
         const data = response.data;
@@ -24,7 +34,7 @@ zokou({
 *╔═══════════════════╗*
 *║   NJABULO JB      ║*
 *╚═══════════════════╝*
-
+*${greeting}*
 *╔═══════════════════╗*
 *║  REPOSITORY INFO  ║*
 *╠═══════════════════╣*
