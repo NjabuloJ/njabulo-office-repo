@@ -67,26 +67,27 @@ zokou({
         repondre("❌ Error fetching repository data. Please try again later.");
        }
 
-    // List of audio URLs
-    const audioUrls = [
-        "https://files.catbox.moe/wsyxi0.mp3",
-        "https://files.catbox.moe/w2k8g2.mp3",
-        "https://files.catbox.moe/cpjbnl.mp3",
-        "https://files.catbox.moe/y6fph9.mp3",
-        "https://files.catbox.moe/moctzu.mp3" // New song added
-    ];
+        // Send audio with caption
+        await zk.sendMessage(dest, { 
+            audio: { 
+                url: "https://files.catbox.moe/bewdug.mp3" // Replace with your audio URL
+            }, 
+            mimetype: 'audio/mp4', 
+            ptt: false, // Set to true if you want it as a voice note
+            caption: "NJABULO-JB SONG",
+            contextInfo: {
+                externalAdReply: {
+                    body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+                    thumbnailUrl: "https://files.catbox.moe/votefa.jpg",
+                    sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
+                    rendersmallThumbnail: false
+                }
+            }
+        });
 
-    // Select a random audio file
-    const randomAudioUrl = audioUrls[Math.floor(Math.random() * audioUrls.length)];
-
-    try {
-        await zk.sendMessage(dest, {
-            audio: { url: randomAudioUrl },
-            mimetype: 'audio/mpeg',
-            ptt: true, // Send as a voice note
-        }, { quoted: ms });
     } catch (e) {
-        console.log("🥵🥵 Error sending audio: " + e);
-        repondre("🥵🥵 Error sending audio: " + e);
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
     }
 });
+        
