@@ -62,11 +62,6 @@ zokou({
             }
         });
 
-    } catch (error) {
-        console.log("Error fetching data:", error);
-        repondre("❌ Error fetching repository data. Please try again later.");
-       }
-
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
@@ -86,8 +81,8 @@ zokou({
         });
 
     } catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
         
