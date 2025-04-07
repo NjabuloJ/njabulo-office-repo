@@ -26,16 +26,16 @@ zokou({
     }
 
     // Construct the search message
-    let searchMessage = `LUCKY MD PLANET TWITTER SEARCH\n\n`;
+    let searchMessage = `NJABULO JB PLANET TWITTER SEARCH\n\n`;
     searchMessage += `Creator: ${response.data.creator}\n\n`;  // Include the creator info
 
     // Loop through search results and append details to the message
     searchData.forEach((track, index) => {
       const trackNumber = index + 1; // Number tracks starting from 1
-      searchMessage += `*☞${trackNumber}.* ${track.user}\n`;
-      searchMessage += `*☞Profile*: ${track.profile || "Unknown"}\n`;
-      searchMessage += `*☞Post*: ${track.post}\n`;  // The text of the tweet
-      searchMessage += `*☞User Link*: ${track.user_link}\n`;  // Link to the user's profile
+      searchMessage += `*📜${trackNumber}.* ${track.user}\n`;
+      searchMessage += `*📜Profile*: ${track.profile || "Unknown"}\n`;
+      searchMessage += `*📜Post*: ${track.post}\n`;  // The text of the tweet
+      searchMessage += `*📜User Link*: ${track.user_link}\n`;  // Link to the user's profile
       searchMessage += `──────────────\n\n`;
     });
 
@@ -45,11 +45,17 @@ zokou({
       {
         text: searchMessage,
         contextInfo: {
-          mentionedJid: [dest],
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
             showAdAttribution: true,
-            title: "LUCKY MD TWITTER SEARCH",
-            body: "Pambe kwa Frediezra",
+            title: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+            body: "message on",
             sourceUrl: "https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f",
             mediaType: 1,
             renderLargerThumbnail: false,
