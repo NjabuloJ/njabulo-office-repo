@@ -3,16 +3,6 @@ const { zokou } = require("../framework/zokou");
 const axios = require("axios");
 const moment = require("moment");
 
-    // Generate greeting based on time of day
-    const hour = moment().hour();
-    let greeting = "🌅Good Morning my brother 🌄";
-    if (hour >= 12 && hour < 18) {
-        greeting = "🌄Good afternnon! Stay energized! 🌿";
-    } else if (hour >= 18) {
-        greeting = "🌇Good Everning! Hope you had a great day! 🌙";
-    } else if (hour >= 22 || hour < 5) {
-        greeting = "Good Night 🌌";
-
 zokou({ 
     nomCom: "reo", 
     categorie: "General", 
@@ -26,6 +16,17 @@ zokou({
     try {
         const response = await axios.get(githubRepo);
         const data = response.data;
+
+        
+    // Generate greeting based on time of day
+    const hour = moment().hour();
+    let greeting = "🌅Good Morning my brother 🌄";
+    if (hour >= 12 && hour < 18) {
+        greeting = "🌄Good afternnon! Stay energized! 🌿";
+    } else if (hour >= 18) {
+        greeting = "🌇Good Everning! Hope you had a great day! 🌙";
+    } else if (hour >= 22 || hour < 5) {
+        greeting = "Good Night 🌌";
 
         const created = moment(data.created_at).format("DD/MM/YYYY");
         const updated = moment(data.updated_at).format("DD/MM/YYYY");
