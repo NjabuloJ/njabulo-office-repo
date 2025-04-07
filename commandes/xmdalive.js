@@ -3,14 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
 zokou(
-  { nomCom: "pall", reaction: "👊", nomFichier: __filename },
+  { nomCom: "alive", reaction: "🦋", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
     // URLs and configurations
-    const fullImageUrl = "https://files.catbox.moe/7ttvmj.jpg"; // Full image URL
-    const smallThumbnailUrl = "https://files.catbox.moe/7ttvmj.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/wdap4t.mp3"; // Voice note URL
+    const fullImageUrl = "https://files.catbox.moe/nw8nva.jpg"; // Full image URL
+    const smallThumbnailUrl = "https://files.catbox.moe/nw8nva.jpg"; // Small thumbnail URL
+    const randomAudio = "https://files.catbox.moe/xktd7q.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029Vb2NqkvBPzjPEvFiYa0R"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -31,7 +31,7 @@ zokou(
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
-            title: `💦 Message from: ${contactName}\n🔥E.n.b Md Alive🔥`, // Your contact in WhatsApp status format
+            title: `💦 Message from: ${contactName}\n🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
@@ -57,14 +57,14 @@ console.log("WhatsApp bot is ready!");
 
 
 zokou(
-  { nomCom: "pill", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "test", reaction: "🦋", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
     // URLs and configurations
-    const fullImageUrl = "https://files.catbox.moe/7ttvmj.jpg"; // Full image URL
-    const smallThumbnailUrl = "https://files.catbox.moe/7ttvmj.jpg"; // Small thumbnail URL
-    const randomAudio = "https://files.catbox.moe/wdap4t.mp3"; // Voice note URL
+    const fullImageUrl = "https://files.catbox.moe/nw8nva.jpg"; // Full image URL
+    const smallThumbnailUrl = "https://files.catbox.moe/nw8nva.jpg"; // Small thumbnail URL
+    const randomAudio = "https://files.catbox.moe/xktd7q.mp3"; // Voice note URL
     const sourceUrl = "https://whatsapp.com/channel/0029Vb2NqkvBPzjPEvFiYa0R"; // Channel link
     const contactName = commandeOptions?.ms?.pushName || "Unknown Contact"; // Sender's name or "Unknown Contact"
 
@@ -85,7 +85,7 @@ zokou(
          },
          forwardingScore: 999, // Score to indicate it has been forwarded
          externalAdReply: {
-            title: `🌟 Message from: ${contactName}\n🔥 E.n.b Md Alive 🔥`, // Your contact in WhatsApp status format
+            title: `🌟 Message from: ${contactName}\n🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋`, // Your contact in WhatsApp status format
             body: "Yoh don't disturb am active🥱 Tap here",
             thumbnailUrl: smallThumbnailUrl, // Small thumbnail displayed below
             mediaType: 1, // Indicate this is an image
