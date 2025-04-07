@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { ezra } = require("../framework/zokou");
+const { zokou } = require("../framework/zokou");
 
 zokou(
-  { nomCom: "pi", reaction: "👊", nomFichier: __filename },
+  { nomCom: "pall", reaction: "👊", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
@@ -57,7 +57,7 @@ console.log("WhatsApp bot is ready!");
 
 
 zokou(
-  { nomCom: "po", reaction: "🌟", nomFichier: __filename },
+  { nomCom: "pill", reaction: "🌟", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Alive command triggered!");
 
@@ -103,3 +103,10 @@ zokou(
     }
   }
 );
+
+console.log("WhatsApp bot is ready!");
+
+
+
+
+      
