@@ -57,7 +57,7 @@ zokou({
     const { repondre, auteurMessage, nomAuteurMessage } = context;
 
     try {
-        const response = await axios.get("https://api.github.com/repos/Beltah254/X-BOT");
+        const response = await axios.get("https://api.github.com/repos/NjabuloJ/Njabulo-Jb");
         const repoData = response.data;
 
         if (repoData) {
