@@ -4,9 +4,9 @@ const axios = require("axios");
 const moment = require("moment");
 
 zokou({ 
-    nomCom: "reos", 
+    nomCom: "repo", 
     categorie: "General", 
-    reaction: "🔎", 
+    reaction: "🦋", 
     nomFichier: __filename 
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
@@ -22,16 +22,16 @@ zokou({
 
         const gitdata = `
 
-    *╭───────────────━⊷*
-    *┋* *ɴᴀᴍᴇ:* ${data.name}
-    *┋* *ᴏᴡɴᴇʀ:* ${data.owner.login}
-    *┋* *sᴛᴀʀs:* ⭐ ${data.stargazers_count}
-    *┋* *ғᴏʀᴋs:* 🍴 ${data.forks_count}
-    *┋* *ᴡᴀᴛᴄʜᴇʀs:* 👀 ${data.watchers}
-    *┋* *ᴄʀᴇᴀᴛᴇᴅ:* 📅 ${created}
-    *┋* *ᴜᴘᴅᴀᴛᴇᴅ:* 🔄 ${updated}
-    *┋* *ʟɪᴄᴇɴsᴇ:* 📜 ${data.license?.name || "None"}
-    *╰───────────────━⊷*
+        *╭────────────━⊷*
+        *┋* *ɴᴀᴍᴇ:* ${data.name}
+        *┋* *ᴏᴡɴᴇʀ:* ${data.owner.login}
+        *┋* *sᴛᴀʀs:* ⭐ ${data.stargazers_count}
+       *┋* *ғᴏʀᴋs:* 🍴 ${data.forks_count}
+       *┋* *ᴡᴀᴛᴄʜᴇʀs:* 👀 ${data.watchers}
+       *┋* *ᴄʀᴇᴀᴛᴇᴅ:* 📅 ${created}
+       *┋* *ᴜᴘᴅᴀᴛᴇᴅ:* 🔄 ${updated}
+       *┋* *ʟɪᴄᴇɴsᴇ:* 📜 ${data.license?.name || "None"}
+       *╰────────────━⊷*
 1️⃣ *REPO LINK:*
 2️⃣ ${data.html_url}
 
