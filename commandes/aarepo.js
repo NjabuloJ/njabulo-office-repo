@@ -23,22 +23,22 @@ zokou({
         const gitdata = `
 
     *╭───────────────━⊷*
-    *┋* *Name:* ${data.name}
-    *┋* *Owner:* ${data.owner.login}
-    *┋* *Stars:* ⭐ ${data.stargazers_count}
-    *┋* *Forks:* 🍴 ${data.forks_count}
-    *┋* *Watchers:* 👀 ${data.watchers}
-    *┋* *Created:* 📅 ${created}
-    *┋* *Updated:* 🔄 ${updated}
-    *┋* *License:* 📜 ${data.license?.name || "None"}
+    *┋* *ɴᴀᴍᴇ:* ${data.name}
+    *┋* *ᴏᴡɴᴇʀ:* ${data.owner.login}
+    *┋* *sᴛᴀʀs:* ⭐ ${data.stargazers_count}
+    *┋* *ғᴏʀᴋs:* 🍴 ${data.forks_count}
+    *┋* *ᴡᴀᴛᴄʜᴇʀs:* 👀 ${data.watchers}
+    *┋* *ᴄʀᴇᴀᴛᴇᴅ:* 📅 ${created}
+    *┋* *ᴜᴘᴅᴀᴛᴇᴅ:* 🔄 ${updated}
+    *┋* *ʟɪᴄᴇɴsᴇ:* 📜 ${data.license?.name || "None"}
     *╰───────────────━⊷*
-1️⃣ *Repo Link:*
+1️⃣ *REPO LINK:*
 2️⃣ ${data.html_url}
 
-3️⃣ *Session:* https://shorturl.at/9WfYs
-4️⃣ *Channel:* https://shorturl.at/q8ZuS
+3️⃣ *SESSION:* https://shorturl.at/9WfYs
+4️⃣ *CHANNEL:* https://shorturl.at/q8ZuS
 
-*Thanks for supporting Njabulo Jb!* ✨`;
+*THANKS FOR SUPPORTING NJABULO JB!* ✨`;
 
         await zk.sendMessage(dest, { 
             image: { url: img }, 
@@ -47,7 +47,7 @@ zokou({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: "120363288304618280@newsletter",
-                    newsletterName: "Njabulo Jb Updates",
+                    newsletterName: "NJABULO JB",
                     serverMessageId: -1,
                 },
                 forwardingScore: 999,
