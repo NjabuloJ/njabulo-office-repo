@@ -3,16 +3,6 @@ const { zokou } = require("../framework/zokou");
 const axios = require("axios");
 const moment = require("moment");
 
-zokou({ 
-    nomCom: "reo", 
-    categorie: "General", 
-    reaction: "🔎", 
-    nomFichier: __filename 
-}, async (dest, zk, commandeOptions) => {
-    const { pushname, repondre } = commandeOptions;
-    const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
-    const img = 'https://files.catbox.moe/xfn913.jpg';
-
     // Generate greeting based on time of day
     const hour = moment().hour();
     let greeting = "🌅Good Morning my brother 🌄";
@@ -22,6 +12,16 @@ zokou({
         greeting = "🌇Good Everning! Hope you had a great day! 🌙";
     } else if (hour >= 22 || hour < 5) {
         greeting = "Good Night 🌌";
+
+zokou({ 
+    nomCom: "reo", 
+    categorie: "General", 
+    reaction: "🔎", 
+    nomFichier: __filename 
+}, async (dest, zk, commandeOptions) => {
+    const { pushname, repondre } = commandeOptions;
+    const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
+    const img = 'https://files.catbox.moe/xfn913.jpg';
 
     try {
         const response = await axios.get(githubRepo);
