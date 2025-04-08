@@ -305,34 +305,37 @@ let menuMsg = `
             sourceUrl: 'https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T', // Add source URL if necessary
             mediaType: 1,
             renderLargerThumbnail: true
+              }
+            }
+        });
+
+        // Send audio with caption
+        await zk.sendMessage(dest, { 
+            audio: { 
+                url: "https://files.catbox.moe/raje26.mp3" // Replace with your audio URL
+            }, 
+            mimetype: 'audio/mp4', 
+            ptt: true, // Set to true if you want it as a voice note
+            caption: "NJABULO-JB SONG",
+            contextInfo: {
+             isForwarded: true,
+             forwardedNewsletterMessageInfo: {
+             newsletterJid: "120363345407274799@newsletter",
+              newsletterName: "NJABULO JB",
+               serverMessageId: -1
+               },
+                forwardingScore: 999,
+                externalAdReply: {
+               body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
+               thumbnailUrl: "https://files.catbox.moe/mmm8ns.jpg",
+               sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
+               rendersmallThumbnail: false
                 }
             }
         });
-    } catch (error) {
-        console.error("Menu error: ", error);
-        repondre("🥵🥵 Menu error: " + error);
-          }
 
-    // List of audio URLs
-    const audioUrls = [
-        "https://files.catbox.moe/u1z33v.mp3",
-        "https://files.catbox.moe/bnwncw.mp3" // New song added
-    ];
-
-    // Select a random audio file
-    const randomAudioUrl = audioUrls[Math.floor(Math.random() * audioUrls.length)];
-
-    try {
-        await zk.sendMessage(dest, {
-            audio: { url: randomAudioUrl },
-            mimetype: 'audio/mpeg',
-            ptt: true, // Send as a voice note
-        }, { quoted: ms });
     } catch (e) {
-        console.log("🥵🥵 Error sending audio: " + e);
-        repondre("🥵🥵 Error sending audio: " + e);
+        console.log("Error fetching data:", error);
+        repondre("❌ Error fetching repository data. Please try again later.");
     }
 });
-
-
-         
