@@ -11,7 +11,7 @@ zokou({
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
-    const img = 'https://files.catbox.moe/xfn913.jpg';
+    const img = 'https://files.catbox.moe/mmm8ns.jpg';
 
     try {
         const response = await axios.get(githubRepo);
@@ -23,14 +23,12 @@ zokou({
         const gitdata = `
 
        *╭────────────━⊷*
-       *┋* *ɴᴀᴍᴇ:* ${data.name}
-       *┋* *ᴏᴡɴᴇʀ:* ${data.owner.login}
+       *┋* *ɴᴀᴍᴇ:   ɴᴊᴀʙᴜʟᴏ ᴊʙ*
+       *┋* *ᴏᴡɴᴇʀ:    ɴᴊᴀʙᴜʟᴏᴊ*
        *┋* *sᴛᴀʀs:* ⭐ ${data.stargazers_count}
        *┋* *ғᴏʀᴋs:* 🍴 ${data.forks_count}
        *┋* *ᴡᴀᴛᴄʜᴇʀs:* 👀 ${data.watchers}
-       *┋* *ᴄʀᴇᴀᴛᴇᴅ:* 📅 ${created}
        *┋* *ᴜᴘᴅᴀᴛᴇᴅ:* 🔄 ${updated}
-       *┋* *ʟɪᴄᴇɴsᴇ:* 📜 ${data.license?.name || "None"}
        *╰────────────━⊷*
 1️⃣ *REPO LINK:*
 2️⃣ ${data.html_url}
@@ -65,7 +63,7 @@ zokou({
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/bewdug.mp3" // Replace with your audio URL
+                url: "https://files.catbox.moe/raje26.mp3" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Set to true if you want it as a voice note
@@ -73,7 +71,7 @@ zokou({
             contextInfo: {
              isForwarded: true,
              forwardedNewsletterMessageInfo: {
-             newsletterJid: "120363288304618280@newsletter",
+             newsletterJid: "120363345407274799@newsletter",
               newsletterName: "NJABULO JB",
                serverMessageId: -1
                 }
