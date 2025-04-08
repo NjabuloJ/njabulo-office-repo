@@ -75,14 +75,7 @@ zokou({
              forwardedNewsletterMessageInfo: {
              newsletterJid: "120363288304618280@newsletter",
               newsletterName: "NJABULO JB",
-               serverMessageId: -1,
-                },
-                forwardingScore: 999,
-                externalAdReply: {
-                    body: "🦋ɴᴊᴀʙᴜʟᴏ ᴊʙ🦋",
-                    thumbnailUrl: "https://files.catbox.moe/votefa.jpg",
-                    sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
-                    rendersmallThumbnail: false
+               serverMessageId: -1
                 }
             }
         });
