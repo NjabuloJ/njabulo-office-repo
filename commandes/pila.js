@@ -77,7 +77,6 @@ let menuMsg = `
         await zk.sendMessage(dest, {
             text: infoMsg + menuMsg,
             image: { url: img }, 
-            caption: menudata,
             contextInfo: {
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
