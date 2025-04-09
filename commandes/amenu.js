@@ -14,10 +14,9 @@ zokou({
     reaction: "🦋", 
     nomFichier: __filename 
 }, async (dest, zk, commandeOptions) => {
-    const { pushname, repondre } = commandeOptions;
-    const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
+    const { pushname, menundre } = commandeOptions;
     const img = 'https://files.catbox.moe/iw6h5w.jpg';
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
+    let { ms, menundre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../framework//zokou");
     var coms = {};
     var mode = "public";
@@ -109,6 +108,7 @@ let menuMsg = `
    try {
         const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name
            await zk.sendMessage(dest, {
+            text: infoMsg + menuMsg,
             image: { url: img }, 
             caption: gitdata,
             contextInfo: {
