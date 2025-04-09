@@ -8,7 +8,11 @@ const s = require(__dirname + "/../set");
 const more = String.fromCharCode(8206)
 const Taphere = more.repeat(4001)
 
-zokou({ nomCom: "lipa", categorie: "General" 
+zokou({
+    nomCom: "lipa",
+    categorie: "General"
+    reaction: "🦋", 
+    nomFichier: __filename 
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
