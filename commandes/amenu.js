@@ -102,6 +102,8 @@ let menuMsg = `
 
  `;
     
+   try {
+        const senderName = nomAuteurMessage || message.from;  // Use correct variable for sender name
            await zk.sendMessage(dest, {
             image: { url: img }, 
             caption: gitdata,
