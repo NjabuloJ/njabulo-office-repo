@@ -5,7 +5,7 @@ const os = require("os");
 const s = require("../set");
 
 zokou({ 
-    nomCom: "buggatti", 
+    nomCom: "bugatti", 
     categorie: "General", 
     reaction: "📜", 
     nomFichier: __filename 
