@@ -11,7 +11,7 @@ zokou({
 }, async (dest, zk, commandeOptions) => {
     const { pushname, repondre } = commandeOptions;
     const githubRepo = 'https://api.github.com/repos/NjabuloJ/Njabulo-Jb';
-    const img = 'https://files.catbox.moe/iw6h5w.jpg';
+    const img = 'https://files.catbox.moe/h4lxeb.jpg';
 
     try {
         const response = await axios.get(githubRepo);
