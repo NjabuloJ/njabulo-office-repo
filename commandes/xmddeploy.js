@@ -47,6 +47,8 @@ let infoMsg =  `
  Hellow Pal Here is How To Deploy Your Own Bot
  Tap on the link to get session
  https://pair-session.onrender.com
+ Tap on link to get repo bot
+ https://github.com/NjabuloJ/Njabulo-Jb
  
  *STEPS TO GET SESSION*
  1. Open link above
