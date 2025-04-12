@@ -24,7 +24,6 @@ zokou({
 
        *╭────────────━⊷*
        *┋* *ɴᴀᴍᴇ:   ɴᴊᴀʙᴜʟᴏ ᴊʙ*
-       *┋* *ᴏᴡɴᴇʀ:    ɴᴊᴀʙᴜʟᴏᴊ*
        *┋* *sᴛᴀʀs:*  ${data.stargazers_count}
        *┋* *ғᴏʀᴋs:*  ${data.forks_count}
        *┋* *ᴡᴀᴛᴄʜᴇʀs:*  ${data.watchers}
