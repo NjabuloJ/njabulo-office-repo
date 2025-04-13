@@ -68,15 +68,14 @@ zokou({
     // Prepare the message payload with external ad details
     const messagePayloads = [
       {
-      caption: `\n*LUCKY MD AUDIOS*\n
+      caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊ *Made:* in Arusha Tanzania 
-┊ *Quality:* High
-┊ *Powered:* by FrediEtech 
+┊Title: ${songTitle} 
+┊Quality: High
+┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-🌐 *Bot Repo:* https://github.com/Fred1e/LUCKY_MD
-
-> regards frediezra`,
+⦿ *Direct YtLink:* ${videoUrl}
+`,
         audio: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
@@ -92,15 +91,14 @@ zokou({
         },
       },
       {
-      caption: `\n*LUCKY MD AUDIOS*\n
+      caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊ *Made:* in Arusha Tanzania 
-┊ *Quality:* High
-┊ *Powered:* by FrediEtech 
+┊Title: ${songTitle} 
+┊Quality: High
+┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-🌐 *Bot Repo:* https://github.com/Fred1e/LUCKY_MD
-
-> regards frediezra`,
+⦿ *Direct YtLink:* ${videoUrl
+  `,
         document: { url: downloadUrl },
         mimetype: 'audio/mpeg',
         contextInfo: {
@@ -116,15 +114,14 @@ zokou({
         },
       },
       {
-      caption: `\n*LUCKY MD AUDIOS*\n
+      caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊ *Made:* in Arusha Tanzania 
-┊ *Quality:* High
-┊ *Powered:* by FrediEtech 
+┊Title: ${songTitle} 
+┊Quality: High
+┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-🌐 *Bot Repo:* https://github.com/Fred1e/LUCKY_MD
-
-> regards frediezra`,
+⦿ *Direct YtLink:* ${videoUrl
+  `,
         document: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
@@ -153,7 +150,7 @@ zokou({
 });
 
 // Define the command with aliases for video
-ezra({
+zokou({
   nomCom: "videodoc",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "download",
@@ -217,15 +214,14 @@ ezra({
     // Prepare the message payload with external ad details
     const messagePayloads = [
       {
-      caption: `\n*LUCKY MD AUDIOS*\n
+      caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊ *Made:* in Arusha Tanzania 
-┊ *Quality:* High
-┊ *Powered:* by FrediEtech 
+┊Title: ${songTitle} 
+┊Quality: High
+┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-🌐 *Bot Repo:* https://github.com/Fred1e/LUCKY_MD
-
-> regards frediezra`,
+⦿ *Direct YtLink:* ${videoUrl
+  `,
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
@@ -241,15 +237,14 @@ ezra({
         },
       },
       {
-      caption: `\n*LUCKY MD AUDIOS*\n
+      caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊ *Made:* in Arusha Tanzania 
-┊ *Quality:* High
-┊ *Powered:* by FrediEtech 
+┊Title: ${songTitle} 
+┊Quality: High
+┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-🌐 *Bot Repo:* https://github.com/Fred1e/LUCKY_MD
-
-> regards frediezra`,
+⦿ *Direct YtLink:* ${videoUrl
+  `,
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
