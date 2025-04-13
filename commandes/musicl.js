@@ -79,6 +79,13 @@ zokou({
         audio: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded          
           externalAdReply: {
             title: conf.BOT,
             body: videoDetails.title,
@@ -102,6 +109,13 @@ zokou({
         document: { url: downloadUrl },
         mimetype: 'audio/mpeg',
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
           externalAdReply: {
             title: conf.BOT,
             body: videoDetails.title,
@@ -125,6 +139,13 @@ zokou({
         document: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
+          isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded          
           externalAdReply: {
             title: conf.BOT,
             body: videoDetails.title,
@@ -225,6 +246,13 @@ zokou({
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded          
           externalAdReply: {
             title: conf.BOT,
             body: videoDetails.title,
@@ -248,6 +276,14 @@ zokou({
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
+        isForwarded: true,
+         forwardedNewsletterMessageInfo: {
+         newsletterJid: '120363345407274799@newsletter',
+         newsletterName: "NJABULO JB",
+         serverMessageId: 143,
+         },
+         forwardingScore: 999, // Score to indicate it has been forwarded
+          
           externalAdReply: {
             title: conf.BOT,
             body: videoDetails.title,
