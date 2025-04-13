@@ -70,7 +70,7 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
