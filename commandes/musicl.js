@@ -70,7 +70,7 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
@@ -93,11 +93,11 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-⦿ *Direct YtLink:* ${videoUrl
+⦿ *Direct YtLink:* ${videoUrl}
   `,
         document: { url: downloadUrl },
         mimetype: 'audio/mpeg',
@@ -116,11 +116,11 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-⦿ *Direct YtLink:* ${videoUrl
+⦿ *Direct YtLink:* ${videoUrl}
   `,
         document: { url: downloadUrl },
         mimetype: 'audio/mp4',
@@ -216,11 +216,11 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-⦿ *Direct YtLink:* ${videoUrl
+⦿ *Direct YtLink:* ${videoUrl}
   `,
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
@@ -239,11 +239,11 @@ zokou({
       {
       caption: `\nNJABULO JB AUDIOS\n
 ╭┈┈┈⊷
-┊Title: ${songTitle} 
+┊Title: ${videoDetails.title} 
 ┊Quality: High
 ┊Duration: ${firstVideo.timestamp}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈⊷
-⦿ *Direct YtLink:* ${videoUrl
+⦿ *Direct YtLink:* ${videoUrl}
   `,
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
