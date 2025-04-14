@@ -72,7 +72,7 @@ zokou({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "🎧 Loading................\n\n📻 wait are seconds.............⬇️ *YOUTUBE DOWNLOADING AUDIO*",
+      text: "🎧 Loading................\n\n📻 wait are seconds.............\n⬇️ *YOUTUBE DOWNLOADING YOU AUDIO*",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
@@ -129,7 +129,7 @@ zokou({
     const video = await searchYouTube(query);
     
     await zk.sendMessage(dest, {
-      text: "🎬 Loading................\n\n🎥 wait are seconds.............⬇️ *YOUTUBE DOWNLOADING VIDEO*",
+      text: "🎬 Loading................\n\n🎥 wait are seconds.............\n⬇️ *YOUTUBE DOWNLOADING YOU VIDEO*",
       contextInfo: getContextInfo("Downloading", userJid, video.thumbnail)
     }, { quoted: ms });
 
