@@ -75,13 +75,13 @@ zokou({
     for (const cat in coms) {
         menuMsg += `
 *「 ${toFancyUppercaseFont(cat)} 」*
-*╭───────────━⊷* `;
+╭─────────────━⊷ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-*┋* *${toFancyLowercaseFont(cmd)}*`;   
+│ *${toFancyLowercaseFont(cmd)}*`;   
         }
         menuMsg += `
-*╰───────────━⊷*`;
+╰─────────────━⊷`;
     }
     
     menuMsg += `
@@ -123,7 +123,7 @@ zokou({
              forwardedNewsletterMessageInfo: {
              newsletterJid: "120363345407274799@newsletter",
               newsletterName: "NJABULO-JB",
-               serverMessageId: -1
+              serverMessageId: Math.floor(100000 + Math.random() * 900000),
                },
                 forwardingScore: 999,
                 externalAdReply: {
