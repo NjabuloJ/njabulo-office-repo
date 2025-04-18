@@ -53,8 +53,8 @@ zokou({
 
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
-    const img = 'https://files.catbox.moe/0g3dgb.jpg';
-    const imgs = 'https://files.catbox.moe/73h91g.jpg';
+    const img = 'https://files.catbox.moe/yauezp.jpg';
+    const imgs = 'https://files.catbox.moe/tdq4eq.jpg';
 
     const infoMsg = `
 ╭─────────────━┈⊷
@@ -74,13 +74,13 @@ zokou({
     for (const cat in coms) {
         menuMsg += `
 *「 ${toFancyUppercaseFont(cat)} 」*
-*╭───────────━⊷* `;
+╭─────────────━┈⊷ `;
         for (const cmd of coms[cat]) {
             menuMsg += `          
-*┋* *${toFancyLowercaseFont(cmd)}*`;   
+│ *${toFancyLowercaseFont(cmd)}*`;   
         }
         menuMsg += `
-*╰───────────━⊷*`;
+*╰─────────────━┈⊷`;
     }
     
     menuMsg += `
@@ -99,8 +99,8 @@ zokou({
                 },
                 forwardingScore: 999,
                 externalAdReply: {
-                    title: "vw golf",
-                    body: "Command List",
+                    title: "🧃 Njabulo-Jb",
+                    body: "🧃Command List menu",
                     thumbnailUrl: imgs,
                     sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
                     mediaType: 1,
@@ -127,7 +127,7 @@ zokou({
                 forwardingScore: 999,
                 externalAdReply: {
                body: "Jb",
-               thumbnailUrl: "https://files.catbox.moe/73h91g.jpg",
+               thumbnailUrl: "https://files.catbox.moe/tdq4eq.jpg",
                sourceUrl: 'https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z',
                rendersmallThumbnail: false
                 }
