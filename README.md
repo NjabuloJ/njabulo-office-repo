@@ -9,6 +9,7 @@
 | **Heroku**   | **Heroku deployment guide**:<br> 1. Create an account on  [Heroku](https://signup.heroku.com)<br> 2. After creating an account, add credit card and [deploy on heroku](https://dashboard.heroku.com/new?button-url=https://github.com/mr-X-force/LUCKY-MD-XFORCE&template=https://github.com/NjabuloJ/Njabulo_Jb.git) 
 <br> 
 |--------------|------------------|
+|--------------|------------------|
 | **Render**   | 1. Sign up at [Render](https://render.com) & link GitHub.<br> 2. Set Build Command as `npm install` & Start Command as `npm start`.<br> 3. Make sure you deploy without putting session id in env file .<br> 4. Come back to your repo and put session in env file and in `Alive.js`, paste your app URL or render link For the bot to run 24/7|
 |--------------|------------------|
 ---
