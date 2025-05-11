@@ -1,4 +1,5 @@
 |--------------|------------------|
+| **WhatsApp** | **I can help you here**:<br> 1. WhatsApp message [channel update](https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T)
 |--------------|------------------|
 | **github**   | **star and forks to repo**:<br> 1. give star and forks to repo [forks](https://github.com/NjabuloJ/Njabulo_Jb/fork) <br> 2. after you done forks get session lD here [PAIRING CODE](https://my-sessions.onrender.com/pair) <br>
 |--------------|------------------|
