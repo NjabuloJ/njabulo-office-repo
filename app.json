@@ -1,0 +1,93 @@
+{
+  "name": "Njabulo_Jb",
+  "description": "Njabulo Jb is a multidevice WhatsApp bot built to make your WhatsApp enjoyable.",
+  "keywords": [
+    "bot",
+    "node",
+    "baileys",
+    "whatsapp"
+  ],
+  "logo": "https://files.catbox.moe/ghhcv1.jpg",
+  "repository": "https://github.com/NjabuloJ/Njabulo-JB1",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "PREFIX": {
+      "description": "Choose your bot's prefix",
+      "value": ".",
+      "required": true
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+      "value": "yes",
+      "required": false
+   },
+    "PM_PERMIT": {
+      "description": "Restrict other users from using your bot in private messages (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
+      "value": "no",
+      "required": false
+    },
+      "ANTI_DELETE_MESSAGE": {
+      "description": "Enable anti-delete message (set 'yes' to activate or 'no' to deactivate)",
+      "value": "yes",
+      "required": false
+    },
+    
+    "ANTICALL_MSG": {
+      "description": "Type your anticall message to always send when calls are declined. You can leave it blank",
+      "value": "This is Njabulo Jb personal assistant kindly leave a message",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "You must give a name for your bot",
+      "value": "Njabulo Jb",
+      "required": false
+    },
+    "TIMEZONE": {
+      "description": "Set your bot timezone",
+      "value": "Africa/Nairobi",
+      "required": false
+    },
+    "PUBLIC_MODE": {
+      "description": "Set 'yes' to make your bot public or 'no' to keep it private",
+      "value": "yes",
+      "required": false
+    },
+    "AUDIO_REPLY": {
+      "description": "Enter yes for your bot to auto reply audio in all chats",
+      "value": "yes",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Enter your session ID, the code you receive after scanning the QR code",
+      "value": "",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Insert your name here",
+      "value": "Njabulo Jb",
+      "required": false
+    },
+    "URL": {
+      "description": "You must add your bot image URL",
+      "value": "https://files.catbox.moe/ghhcv1.jpg",
+      "required": true
+    },
+    "NUMERO_OWNER": {
+      "description": "Your phone number (exclude '+' and area code, e.g., '2547222222233')",
+      "value": "26777821911",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0"
+    }
+  ]
+    }
