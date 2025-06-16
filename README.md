@@ -2,6 +2,11 @@ am sorry oll l will put back wait njabulo office repo
 
 <h1 align="center">  NJABULO JB REPO GIT </h1>
   <a href="https://github.com/NjabuloJ/Njabulo-Jb"><img src="https://img.shields.io/badge/Repo%20Njabulo%20Jb-white" alt="LOADING BY NJABULO JB " width="300"></a>
+  . **Deploy the Bot:**
+
+   Once your Heroku account is ready, deploy the bot by clicking the button below:
+
+[![Find On Whatsapp ](https://img.shields.io/badge/➤Click-Here-red.svg)](https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Njabulo-Jb)
 
 ### 1. Fork This Repository
 
@@ -16,6 +21,11 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 <h1 align="center">  NJABULO JB REPO GIT </h1>
   <a href="https://github.com/NjabuloJ/Alec_Jb"><img src="https://img.shields.io/badge/Repo%20Alec%20Jb-white" alt="LOADING BY NJABULO JB " width="300"></a>
+  . **Deploy the Bot:**
+
+   Once your Heroku account is ready, deploy the bot by clicking the button below:
+
+[![Find On Whatsapp ](https://img.shields.io/badge/➤Click-Here-red.svg)](https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Alec-Jb)
 
 ### 1. Fork This Repository
 
