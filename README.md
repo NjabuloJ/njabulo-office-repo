@@ -1,8 +1,8 @@
 <a href="https://stardev.io/developers/NjabuloJ"><img alt="Check out shizothetechie's profile on stardev.io" src="https://stardev.io/developers/NjabuloJ/badge/languages/global.svg" /></a>
 
-  ### . Get Session ID via Pair Code
+  ### . Get Session ID
 
-You'll need a session ID to run the bot. Click the button below to obtain your session ID:
+pair code and scroll down deploy bot:
 
 <a href='https://njabulo-api-code.onrender.com/' target="_blank"><img alt='Get Session ID' src='https://img.shields.io/badge/Click here to get your session id-black?style=for-the-badge&logo=opencv&logoColor=red'/></a>  
 
