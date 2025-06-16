@@ -1,3 +1,5 @@
+<a href="https://stardev.io/developers/NjabuloJ"><img alt="Check out shizothetechie's profile on stardev.io" src="https://stardev.io/developers/NjabuloJ/badge/languages/global.svg" /></a>
+
 am sorry oll l will put back wait njabulo office repo
 
 <h1 align="center">  NJABULO JB REPO GIT </h1>
