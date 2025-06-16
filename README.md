@@ -50,6 +50,8 @@ Start by forking this repository to your own GitHub account. Click the button be
    https://github.com/NjabuloJ/Alec_Jb/fork
    ```
 
+[
+[⟵(o_O) 
 ### New bot working [_message via ad_]
 ### . Get Session ID via Pair Code
 
@@ -62,3 +64,7 @@ You'll need a session ID to run the bot. Click the button below to obtain your s
    Once your Heroku account is ready, deploy the bot by clicking the button below:
 
 [![Find On Whatsapp ](https://img.shields.io/badge/➤Click-Here-red.svg)](https://dashboard.heroku.com/new?template=https://github.com/NjabuloJ/Njabulo)
+
+   ```bash
+   or copy WhatsApp Channel  https://whatsapp.com/channel/0029VbAckOZ7tkj92um4KN3u
+   ```
